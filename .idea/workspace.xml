@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Segundo commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Commit Classe Objeto Conta" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +33,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
+    "ignore.preview.features.used": "true",
     "last_opened_file_path": "C:/Users/Public/Documents/Secao4",
+    "settings.editor.selected.configurable": "vcs.Git",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -67,7 +67,42 @@
       <option name="project" value="LOCAL" />
       <updated>1667449160799</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit Classe Objeto Conta">
+      <created>1667517428929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667517428929</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit Classe Objeto Conta">
+      <created>1667517542905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667517542905</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit Classe Objeto Conta">
+      <created>1667517604969</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667517604969</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit Classe Objeto Conta">
+      <created>1667518150909</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667518150909</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit Classe Objeto Conta">
+      <created>1667518369077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667518369077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,7 +119,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeiro Commit" />
     <MESSAGE value="Segundo commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit" />
+    <MESSAGE value="Commit Classe Objeto Conta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Classe Objeto Conta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
