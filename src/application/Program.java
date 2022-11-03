@@ -14,26 +14,39 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        CriadorConta criadorConta = new CriadorConta();
-        criadorConta.criadorConta();
+        System.out.println(" *** Programa simule app bancario ***");
 
-
-        /*
-
-        ArrayList<Conta> listaPessoa = new ArrayList<Pessoa>();
-
-        for(int i=0; i < 10; i++){
-            Pessoa pessoa = new Pessoa();
-            System.out.println("\nDigite o nome:");
-            pessoa.nome = s.next();
-            System.out.println("\nDigite a idade:");
-            pessoa.idade = s.nextInt();
-            listaPessoa.add(pessoa);
-
+        int opcao = 1;
+        while(opcao == 1 || opcao == 2 || opcao == 3) {
+            System.out.println(" Selecione a opcao desejada: ");
+            System.out.println("1- Criar uma conta nova");
+            System.out.println("2- Realizar uma operacao");
+            System.out.println("3- Consultar dados de todas as contas");
+            System.out.println("Qualquer outro numero para encerrar o programa");
+            opcao = sc.nextInt();
+            Roteador(opcao);
         }
-        System.out.println(listaPessoa.get(7));
+    }
 
-*/
+    public static void Roteador(int opcao) {
 
+        CriadorConta criadorConta = new CriadorConta();
+        switch (opcao) {
+            case 1:
+                System.out.println("Criacao de contas iniciado");
+                criadorConta.criadorConta();
+                break;
+            case 2:
+                System.out.println("Opcao de realizar operacoes");
+                break;
+            case 3:
+                System.out.println("Opcao para imprimir todas as informacoes de todas as contas");
+                break;
+            case default:
+                System.out.println("Programa encerrado!");
+                break;
+        }
     }
 }
+
+
