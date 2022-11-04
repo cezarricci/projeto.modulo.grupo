@@ -41,4 +41,10 @@ public class ContaNova {
     public void setSaldo(BigDecimal saldo) {
         Saldo = saldo;
     }
+
+    public ContaNova(Integer IDConta, String IDCliente, String tipoConta) {
+        this.IDConta = IDConta;
+        this.IDCliente = IDCliente;
+        this.TipoConta = tipoConta;
+    }
 }
