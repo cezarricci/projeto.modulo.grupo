@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Alterado o CriadorConta e o GestaoClientesContas">
-      <change afterPath="$PROJECT_DIR$/src/application/MenuOperacoes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/enums/TipoOperacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="menu operacoes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/CriadorConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/CriadorConta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/MenuOperacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/OperacoesConta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667559725827</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="menu operacoes">
+      <created>1667588491988</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667588491988</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +180,8 @@
     <MESSAGE value="CLasse GestaoClientesCOntas contendo BaseCliente BaseConta e métodos criar cliente e criar conta." />
     <MESSAGE value="Atualizando métodos GestaoClientesContas!" />
     <MESSAGE value="Alterado o CriadorConta e o GestaoClientesContas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterado o CriadorConta e o GestaoClientesContas" />
+    <MESSAGE value="menu operacoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu operacoes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

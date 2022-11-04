@@ -1,9 +1,5 @@
 package application;
 
-import entities.Conta;
-import entities.enums.TipoConta;
-import entities.enums.TipoPessoa;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -39,8 +35,8 @@ public class Program {
                 break;
             case 2:
                 System.out.println("Opcao de realizar operacoes");
-                MenuOperacoes menuOperacoes = new MenuOperacoes();
-                menuOperacoes.SelecionaOpcao();
+                OperacoesConta operacoesConta = new OperacoesConta();
+                operacoesConta.ListarOperacoes();
             case 3:
                 System.out.println("Opcao para imprimir todas as informacoes de todas as contas");
                 break;
