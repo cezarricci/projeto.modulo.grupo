@@ -10,7 +10,6 @@ import java.util.List;
 public class GestaoClientesContas {
     List <Cliente> baseClientes = new ArrayList<Cliente>();
     List <ContasCliente> baseContasCliente = new ArrayList<ContasCliente>();
-
     List <ContaNova> baseContas = new ArrayList<ContaNova>();
 
     public boolean criarCliente (String idCliente, String nomeCliente, String tipoPessoa){
