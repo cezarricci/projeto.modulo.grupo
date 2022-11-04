@@ -8,14 +8,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestaoClientesContas {
-    List <Cliente> baseClientes = new ArrayList<Cliente>();
-    List <ContasCliente> baseContasCliente = new ArrayList<ContasCliente>();
-    List <ContaNova> baseContas = new ArrayList<ContaNova>();
+    public static List <Cliente> baseClientes = new ArrayList<Cliente>();
+    public List <ContasCliente> baseContasCliente = new ArrayList<ContasCliente>();
+    public List <ContaNova> baseContas = new ArrayList<ContaNova>();
 
     public boolean criarCliente (String idCliente, String nomeCliente, String tipoPessoa){
         Cliente novoCliente = new Cliente(idCliente, nomeCliente, tipoPessoa);
         baseClientes.add(novoCliente);
         return true;
+    }
+
+    public boolean validaIdCliente(String idCliente, String nomeCliente, String tipoPessoa){
+        boolean valida=false;
+        Cliente cliente = new Cliente(idCliente, nomeCliente, tipoPessoa);
+        for(Cliente c:baseClientes){
+            if (idCliente.equals(c.getIdCliente().toString())){
+                valida = true;
+            }
+        }
+        return valida;
     }
 
     public boolean criarConta(Integer idConta, String idCliente, String tipoConta){

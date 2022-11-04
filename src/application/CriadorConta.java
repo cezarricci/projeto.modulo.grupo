@@ -1,5 +1,6 @@
 package application;
 
+import entities.Cliente;
 import entities.Conta;
 import entities.SaldoConta;
 import entities.enums.TipoConta;
@@ -17,23 +18,13 @@ public class CriadorConta {
         int i = 0;
         int j = 0;
 
-        System.out.println("Digite o tipo da pessoa: ");
-        for (TipoPessoa tipoPessoa : TipoPessoa.values()) {
-            System.out.println(i + " - " + tipoPessoa);
-            i++;
-        }
-        int tipoPessoaIn = sc.nextInt();
-
-        String tipoPessoaIn2 = null;
-        if (tipoPessoaIn >= i) {
-            System.out.println("Valor de Tipo Pessoa Inválido");
-        } else {
-            TipoPessoa[] tipoPessoaIn1 = TipoPessoa.values();
-            tipoPessoaIn2 = String.valueOf(tipoPessoaIn1[tipoPessoaIn]);
-        }
-
         System.out.println("Digite o nome do responsavel: ");
         String nome = sc.next();
+
+        System.out.println("Digite o documento do responsavel (CPF ou CNPJ): ");
+        String documento = sc.next();
+
+        String tipoPessoaIn2 = TipoPessoa(documento);
 
         System.out.println("Digite o tipo da conta desejado: ");
         if (tipoPessoaIn2.equals(TipoPessoa.PESSOA_FISICA.toString())) {
@@ -50,41 +41,50 @@ public class CriadorConta {
             }
         }
 
-        String tipoContaIn2 = null;
         int tipoContaIn = sc.nextInt();
+        String tipoContaIn2 = TipoConta(tipoContaIn, tipoPessoaIn2, j);
+        InseriCliente(nome,documento,tipoPessoaIn2);
+
+    }
+
+    public static String TipoPessoa(String documento) {
+
+        String tipoPessoaIn1 = null;
+        switch (documento.length()) {
+            case 11:
+                tipoPessoaIn1 = String.valueOf(TipoPessoa.PESSOA_FISICA);
+                break;
+            case 14:
+                tipoPessoaIn1 = String.valueOf(TipoPessoa.PESSOA_JURICA);
+                break;
+            case default:
+                System.out.println("Valor de documento Inválido");
+        }
+        return tipoPessoaIn1;
+    }
+
+    public static String TipoConta(int tipoContaIn, String tipoPessoaIn2, int j) {
+
+        String tipoContaIn2 = null;
         if (tipoContaIn >= j) {
             System.out.println("Valor de Tipo Conta Inválido");
-        } else if(tipoPessoaIn2.equals(TipoPessoa.PESSOA_FISICA.toString())) {
+        } else if (tipoPessoaIn2.equals(TipoPessoa.PESSOA_FISICA.toString())) {
             TipoConta[] tipoContaIn1 = TipoConta.values();
             tipoContaIn2 = String.valueOf(tipoContaIn1[tipoContaIn]);
-        }else{
+        } else {
             TipoContaJuridica[] tipoContaIn1 = TipoContaJuridica.values();
             tipoContaIn2 = String.valueOf(tipoContaIn1[tipoContaIn]);
         }
-
-        System.out.println("Saldo inicial: ");
-        double saldoInicial = sc.nextDouble();
-        SaldoConta saldoConta = new SaldoConta();
-        saldoConta.setSaldo(saldoInicial);
-
-        Conta conta = new Conta(nome,"000-x",saldoConta.getSaldo(),tipoPessoaIn2,tipoContaIn2);
-        conta.addConta(0,conta.regCompleto());
-        int x = conta.getControleInsert();
-        System.out.println("Retorno"+x);
-
-        //PRECISA TERMINAR DE TRATAR E CRIAR FUNCAO PARA REALIZAR O INSERT NO ARRAY LIST.
-        //A IDEIA EH TRATAR O REGISTRO CONCATENADO E GERAR AS INFORMAÇÕES GUARDANDO A REFERENCIA DE ENTRADA.
+        return tipoContaIn2;
     }
 
-/*
-    System.out.println("regCompleto: " + conta.regCompleto());
-        conta.addConta(0, conta.regCompleto());
-        System.out.println("Arraylist: " + conta.getConta());
-    //ira inserir o registro no arraylist
-
- */
-    public static void InseriConta(){
-
+    public static void InseriCliente(String nome,String documento,String tipoPessoaIn2) {
+        GestaoClientesContas gestaoClientesContas = new GestaoClientesContas();
+        if(!gestaoClientesContas.validaIdCliente(nome, documento, tipoPessoaIn2)){
+            gestaoClientesContas.criarCliente(nome, documento, tipoPessoaIn2);
+        }else{
+            System.out.println("Cliente ja possui cadastro!");
+        }
     }
 
 }
