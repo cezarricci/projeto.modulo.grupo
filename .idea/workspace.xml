@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="terceiro commit">
+    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Alterado o CriadorConta e o GestaoClientesContas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/CriadorConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/CriadorConta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/GestaoClientesContas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/GestaoClientesContas.java" afterDir="false" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667524282738</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Alterado o CriadorConta e o GestaoClientesContas">
+      <created>1667559725827</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667559725827</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +172,8 @@
     <MESSAGE value="CLasse Objeto ContasCliente" />
     <MESSAGE value="CLasse GestaoClientesCOntas contendo BaseCliente BaseConta e métodos criar cliente e criar conta." />
     <MESSAGE value="Atualizando métodos GestaoClientesContas!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando métodos GestaoClientesContas!" />
+    <MESSAGE value="Alterado o CriadorConta e o GestaoClientesContas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterado o CriadorConta e o GestaoClientesContas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

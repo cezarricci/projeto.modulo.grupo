@@ -43,7 +43,7 @@ public class CriadorConta {
 
         int tipoContaIn = sc.nextInt();
         String tipoContaIn2 = TipoConta(tipoContaIn, tipoPessoaIn2, j);
-        InseriCliente(nome,documento,tipoPessoaIn2);
+        InseriConta(nome,documento,tipoPessoaIn2,tipoContaIn2);
 
     }
 
@@ -78,13 +78,13 @@ public class CriadorConta {
         return tipoContaIn2;
     }
 
-    public static void InseriCliente(String nome,String documento,String tipoPessoaIn2) {
+    public static void InseriConta(String nome,String documento,String tipoPessoaIn2,String tipoContaIn2) {
         GestaoClientesContas gestaoClientesContas = new GestaoClientesContas();
         if(!gestaoClientesContas.validaIdCliente(nome, documento, tipoPessoaIn2)){
             gestaoClientesContas.criarCliente(nome, documento, tipoPessoaIn2);
-        }else{
-            System.out.println("Cliente ja possui cadastro!");
+            gestaoClientesContas.maxIdsContas();
         }
+
     }
 
 }
