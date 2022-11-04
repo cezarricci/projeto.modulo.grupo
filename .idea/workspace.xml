@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Commit Classe Objeto Conta" />
+    <list default="true" id="d3c0cf20-1e2e-4257-8fa3-c43af429af70" name="Changes" comment="Commit Classe Objeto Conta">
+      <change afterPath="$PROJECT_DIR$/src/entities/Parametros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667518369077</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit Classe Objeto Conta">
+      <created>1667519106686</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667519106686</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
