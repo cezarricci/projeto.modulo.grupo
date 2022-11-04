@@ -1,31 +1,37 @@
 package entities;
 
 public class Cliente {
-    private String IDCliente = "00000000000000";
-    private String NomeCliente = "Nome Completo";
-    private String TipoPessoaCliente = "NAO_DEFINIDO";
+    private String idCliente = "00000000000000";
+    private String nomeCliente = "Nome Completo";
+    private String tipoPessoaCliente = "NAO_DEFINIDO";
 
-    public String getIDCliente() {
-        return IDCliente;
+    public String getIdCliente() {
+        return idCliente;
     }
 
-    public void setIDCliente(String IDCliente) {
-        this.IDCliente = IDCliente;
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getNomeCliente() {
-        return NomeCliente;
+        return nomeCliente;
     }
 
     public void setNomeCliente(String nomeCliente) {
-        NomeCliente = nomeCliente;
+        this.nomeCliente = nomeCliente;
     }
 
     public String getTipoPessoaCliente() {
-        return TipoPessoaCliente;
+        return tipoPessoaCliente;
     }
 
     public void setTipoPessoaCliente(String tipoPessoaCliente) {
-        TipoPessoaCliente = tipoPessoaCliente;
+        this.tipoPessoaCliente = tipoPessoaCliente;
+    }
+
+    public Cliente(String IDCliente, String nomeCliente, String tipoPessoaCliente) {
+        this.idCliente = IDCliente;
+        this.nomeCliente = nomeCliente;
+        this.tipoPessoaCliente = tipoPessoaCliente;
     }
 }
